@@ -1,0 +1,34 @@
+{
+  "name": "vue-base-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "repository": "https://github.com/lbertoncello/vue-base-project.git",
+  "author": "lbertoncello <lucas_b_andrade@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix",
+    "format": "prettier --write src/",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-vue": "^9.10.0",
+    "git-commit-msg-linter": "4.1.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7",
+    "vite": "^4.2.0"
+  }
+}
