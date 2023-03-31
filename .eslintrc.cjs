@@ -16,12 +16,28 @@ module.exports = {
     SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2022,
     sourceType: 'module',
   },
   plugins: [
     'vue',
   ],
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [ 
+          ['@', './src']
+        ]
+      },
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    }
+  },
   rules: {
+    'vue/multi-word-component-names': ['error', {
+      'ignores': [ 'Home', 'Layout', 'View' ]
+    }]
   },
 };
