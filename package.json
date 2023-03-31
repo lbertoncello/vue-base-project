@@ -15,7 +15,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
@@ -23,6 +24,7 @@
     "@vue/eslint-config-prettier": "^7.1.0",
     "eslint": "^8.37.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-vue": "^9.10.0",
     "git-commit-msg-linter": "4.1.2",
